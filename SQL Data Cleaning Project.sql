@@ -107,7 +107,7 @@ SET OwnerSplitState = Parsename (REPLACE(OwnerAddress, ',', '.'),1)
 Select OwnerSplitAddress, OwnerSplitCity, OwnerSplitState
 From PortfolioProject..NashvilleHousing
 -----------------------------------------------------------------------------------------------------------------
--- Change Y and N to yes and No in "Sold as Vacant" foe;d
+-- Change Y and N to yes and No in "Sold as Vacant" field
 Select Distinct (SoldAsVacant), count(SoldAsVacant)
 From PortfolioProject..NashvilleHousing
 Group by SoldAsVacant
